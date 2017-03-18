@@ -11,12 +11,6 @@ import views.html.attendees.count;
 import views.html.index;
 
 public class AttendeesController extends Controller {
-	/**
-     * An action that renders an HTML page with a welcome message.
-     * The configuration in the <code>routes</code> file means that
-     * this method will be called when the application receives a
-     * <code>GET</code> request with a path of <code>/</code>.
-     */
 	
 	private AttendeesDB attendeesDB = new AttendeesDB();
 	
@@ -30,8 +24,7 @@ public class AttendeesController extends Controller {
     }
     
     public Result getBySurname(String surname) {
-    	String retrievedName = attendeesDB.getBySurname(surname);
-    	return ok(bysname.render(retrievedName));
+    	return TODO;
     }
     
     public Result count() {
