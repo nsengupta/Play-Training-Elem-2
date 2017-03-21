@@ -1,0 +1,7 @@
+New log file opened at Sun Jan 15 06:31:22 IST 2017 by 3135@Cheetah
+Taking next connection to: 39372
+New client attempting to connect on port: 46212-39372
+  Address = /127.0.1.1:39372
+This client on port 46212 has uuid dcbb4780-a174-474a-be22-a155cc30e17a configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-dcbb4780-a174-474a-be22-a155cc30e17a
+Taking next connection to: 39372

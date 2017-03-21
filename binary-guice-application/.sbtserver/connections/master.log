@@ -1,0 +1,31 @@
+New log file opened at Fri Dec 30 17:51:49 IST 2016 by 13762@Cheetah
+Taking next connection to: 36925
+New client attempting to connect on port: 42934-36925
+  Address = /127.0.1.1:36925
+This client on port 42934 has uuid b10a53fa-96c8-4db9-b5c9-ab3f1a80191a configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-b10a53fa-96c8-4db9-b5c9-ab3f1a80191a
+Taking next connection to: 36925
+New client attempting to connect on port: 42936-36925
+  Address = /127.0.1.1:36925
+Handshake exception on socket: 42936
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 36925
+New client attempting to connect on port: 42938-36925
+  Address = /127.0.1.1:36925
+This client on port 42938 has uuid c5443847-d6b3-4d6e-b0e6-a7b541d59422 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-b10a53fa-96c8-4db9-b5c9-ab3f1a80191a, activator-c5443847-d6b3-4d6e-b0e6-a7b541d59422
+Taking next connection to: 36925
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 13762@Cheetah logs at Fri Dec 30 17:54:49 IST 2016, goodbye.
