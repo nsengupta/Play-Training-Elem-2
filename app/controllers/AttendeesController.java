@@ -2,13 +2,18 @@ package controllers;
 
 import java.util.List;
 
-import models.AttendeesDB;
+
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.attendees.bysname;
 import views.html.attendees.list;
 import views.html.attendees.count;
+import views.html.attendees.newPlayer;
 import views.html.index;
+
+
+import models.SoccerAttendeeRecord;
+import models.AttendeesDB;
 
 public class AttendeesController extends Controller {
 	
@@ -33,7 +38,11 @@ public class AttendeesController extends Controller {
     }
     
     public Result addAttendee(String surname,String firstname) {
-    	return TODO;
+    	
+    	String statusOfAdding = attendeesDB.addAttendee(surname, firstname);
+    	return ok(newPlayer.render(statusOfAdding));
     }
+    
+    
 
 }

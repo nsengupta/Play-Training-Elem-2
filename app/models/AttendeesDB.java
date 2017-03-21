@@ -48,5 +48,18 @@ public class AttendeesDB {
 	public int attendeeCount() {
 		return (attendees.size());
 	}
+	
+	public String addAttendee(String sname, String fname) {
+		
+		String retrievedFname = attendees.get(sname);
+		if (retrievedFname == null || retrievedFname.isEmpty()) {
+			attendees.put(sname, fname);
+			return (sname + "," + fname + ":added");
+		}
+		else {
+			return null; // TODO: What may we return?
+		}
+		
+	}
 
 }

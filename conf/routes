@@ -11,6 +11,8 @@ GET     /all                        controllers.AttendeesController.getAll
 
 GET     /surname/:sname             controllers.AttendeesController.getBySurname(sname: String)
 
+POST    /add/newPlayer/:sname/:fname controllers.AttendeesController.addAttendee(sname:String, fname:String)
+
 
 # An example controller showing how to write asynchronous code
 GET     /message                    controllers.AsyncController.message
